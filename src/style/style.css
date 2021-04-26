@@ -1,0 +1,88 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+judul-title {
+    display: inline-block;
+    padding: 16px;
+    width: 100%;
+    background-color: purple;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+body {
+    font-family: sans-serif;
+    background: #f6f2ff;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+}
+main > .data {
+    display: flex;
+}
+.box {
+    background-color: #3f179c;
+    margin: 5px;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.cari{
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    top: 10px;
+}
+.cari > input {
+    width: 70%;
+    padding: 16px;
+    border: 1px solid #3f179c;
+    font-weight: bold;
+    margin-left: auto;
+    border-radius: 10px 0 0 10px;
+}
+.cari > button {
+    width: 23%;
+    cursor: pointer;
+    margin-right: auto;
+    padding: 16px;
+    background-color: #3f179c;
+    color: white;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+}
+.cari > input:focus {
+    outline: 0;
+    border: 3px solid #3f179c;
+}
+
+.negara {
+    text-align: center;
+    background: #179c4e;
+    color: white;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    main> .data{
+        display: block;
+    }
+}
